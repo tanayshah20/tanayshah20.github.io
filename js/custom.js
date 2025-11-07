@@ -1,4 +1,7 @@
-/* global Pace, ScrollMagic, Linear */
+/*
+ * Consolidated Custom Scripts for Tanay Shah Portfolio
+ * Bundled functionality from theme.js and plugin initializations
+ */
 
 (function($){
     "use strict";
@@ -38,7 +41,6 @@
             return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
         }
     };
-    
     
     /*
     * Window load

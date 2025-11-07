@@ -1,19 +1,29 @@
 /*
-* Style
-*/
+ * Consolidated Custom Styles for Tanay Shah Portfolio
+ * Merged from: style.css, color_blue.css, switch_style.css
+ */
 
-
-/*
-* Google font
-*/
-
+/* Google Fonts */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600|Open+Sans:400,600");
 
+/* Color Scheme - Blue Theme */
+:root {
+    --base-color: #3498db;
+    --base-color-hover: #2980b9;
+}
 
-/*
-* Section - Home
-*/
+.bg-base-color { background-color: var(--base-color) !important; }
+.text-base-color { color: var(--base-color) !important; }
+.btn-base-color { 
+    background-color: var(--base-color);
+    border-color: var(--base-color);
+}
+.btn-base-color:hover {
+    background-color: var(--base-color-hover);
+    border-color: var(--base-color-hover);
+}
 
+/* Section - Home */
 #home {
     height: 100%;
     position: relative;
@@ -28,10 +38,7 @@
     }
 }
 
-/*
-* Section - Profile
-*/
-
+/* Section - Profile */
 .col-profile {
     padding-bottom: 80px;
     padding-top: 80px;
@@ -49,19 +56,12 @@
     }
 }
 
-
-/*
-* Section - Services
-*/
-
+/* Section - Services */
 #services .border-bottom {
     border-bottom-style: dashed !important;
 }
 
-/*
-* Section - Accolades
-*/
-
+/* Section - Accolades */
 .accolades > .item {
     margin-top: 25px;
     position: relative;
@@ -96,11 +96,7 @@
     padding-bottom: 25px;
 }
 
-
-/*
-* Section - Work Process
-*/
-
+/* Section - Work Process */
 .work-process > .item {
     padding: 0;
     position: relative;
@@ -227,38 +223,30 @@
 /* Projects Section */
 #projects {
     padding: 80px 0;
-  }
-  
-  .project-item {
+}
+
+.project-item {
     margin-bottom: 30px;
-  }
-  
-  .project-item h3 {
+}
+
+.project-item h3 {
     font-size: 24px;
     margin-bottom: 10px;
-  }
-  
-  .project-item p {
+}
+
+.project-item p {
     font-size: 16px;
     line-height: 1.5;
-  }
+}
 
-
-/*
-* Map
-*/
-
+/* Map */
 #gmap {
     height: 400px;
     position: relative;
     width: 100%;
 }
 
-
-/*
-* Footer
-*/
-
+/* Footer */
 footer {
     padding: 130px 0;
 }
